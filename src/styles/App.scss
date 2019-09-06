@@ -114,6 +114,7 @@ body {
 	}
 	&__layout {
 		display: flex;
+		align-items: flex-start;
 		position: relative;
 		justify-content: center;
 		margin: 14vh auto 16vh;
@@ -142,6 +143,6 @@ body {
 	}
 
 	100% {
-		transform: translateY(-1800px) rotate(600deg);
+		transform: translateY(-2400px) rotate(600deg);
 	}
 }

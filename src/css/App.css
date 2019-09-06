@@ -135,6 +135,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   position: relative;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -173,8 +176,8 @@ body {
             transform: translateY(0);
   }
   100% {
-    -webkit-transform: translateY(-1800px) rotate(600deg);
-            transform: translateY(-1800px) rotate(600deg);
+    -webkit-transform: translateY(-2400px) rotate(600deg);
+            transform: translateY(-2400px) rotate(600deg);
   }
 }
 
@@ -184,8 +187,8 @@ body {
             transform: translateY(0);
   }
   100% {
-    -webkit-transform: translateY(-1800px) rotate(600deg);
-            transform: translateY(-1800px) rotate(600deg);
+    -webkit-transform: translateY(-2400px) rotate(600deg);
+            transform: translateY(-2400px) rotate(600deg);
   }
 }
 /*# sourceMappingURL=App.css.map */
