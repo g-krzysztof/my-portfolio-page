@@ -1,0 +1,26 @@
+.ProfileCard {
+  padding: 0px;
+  margin: 0px;
+  position: relative;
+  z-index: 0;
+}
+
+.ProfileCard__content {
+  width: 480px;
+  height: 70vh;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.ProfileCard__content::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  margin-left: -15px;
+  margin-top: -15px;
+  width: 480px;
+  height: 70vh;
+  background: linear-gradient(135deg, rgba(120, 204, 109, 0.4) 0%, rgba(120, 204, 109, 0.01) 100%);
+  border-radius: 5px;
+}
+/*# sourceMappingURL=ProfileCard.css.map */

@@ -1,0 +1,10 @@
+.Content {
+  background-color: white;
+  height: 200px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  border-radius: 5px;
+  margin: 20px 0 0 0;
+}
+/*# sourceMappingURL=Content.css.map */

@@ -1,0 +1,10 @@
+.Header {
+  position: relative;
+  background-color: #fff;
+  width: 90px;
+  height: 200px;
+  border-radius: 5px;
+  z-index: 1;
+  margin: 50px 10px 0 0;
+}
+/*# sourceMappingURL=Header.css.map */
