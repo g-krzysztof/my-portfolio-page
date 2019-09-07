@@ -8,8 +8,17 @@
 .ProfileCard__content {
   width: 480px;
   height: 70vh;
-  background-color: #fff;
+  background-color: white;
   border-radius: 5px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+@media (max-width: 799px) {
+  .ProfileCard__content {
+    width: 280px;
+    height: 50vh;
+  }
 }
 
 .ProfileCard__content::before {
@@ -22,5 +31,14 @@
   height: 70vh;
   background: linear-gradient(135deg, rgba(120, 204, 109, 0.4) 0%, rgba(120, 204, 109, 0.01) 100%);
   border-radius: 5px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+@media (max-width: 799px) {
+  .ProfileCard__content::before {
+    width: 280px;
+    height: 50vh;
+  }
 }
 /*# sourceMappingURL=ProfileCard.css.map */

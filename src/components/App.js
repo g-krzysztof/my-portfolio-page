@@ -4,14 +4,26 @@ import Header from './Header';
 import ProfileCard from './ProfileCard';
 import Content from './Content';
 
-function App() {
+import { TransitionGroup, CSSTransition } from "react-transition-group";
+import { withRouter } from 'react-router-dom';
+
+const App = ({ location }) => {
   return (
     <div className="App">
-      <div className="App__layout">
-        <Header />
-        <ProfileCard />
-        <Content />
-      </div>
+      <TransitionGroup>
+        <CSSTransition
+          key={location.key}
+          timeout={{ enter: 300, exit: 300 }}
+          classNames={'fade'}
+        >
+          <div className="App__layout">
+            <Header />
+            <ProfileCard />
+            <Content />
+          </div>
+        </CSSTransition>
+      </TransitionGroup>
+
       <ul class="App__squares">
         <li class="fa fa-stop" aria-hidden="true"></li>
         <li class="fa fa-stop" aria-hidden="true"></li>
@@ -30,4 +42,4 @@ function App() {
   );
 }
 
-export default App;
+export default withRouter(App);

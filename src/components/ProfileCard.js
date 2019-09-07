@@ -4,7 +4,7 @@ import '../css/ProfileCard.css';
 function ProfileCard() {
     return (
         <div className="ProfileCard">
-            <div className="ProfileCard__content"><h2>Profile</h2>
+            <div className="ProfileCard__content"><h2>Profile 3</h2>
             </div>
         </div>
     );
