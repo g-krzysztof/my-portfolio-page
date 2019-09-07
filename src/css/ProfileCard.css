@@ -2,10 +2,20 @@
   padding: 0px;
   margin: 0px;
   position: relative;
-  z-index: 0;
+  z-index: 5;
 }
 
 .ProfileCard__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 480px;
   height: 70vh;
   background-color: white;
@@ -40,5 +50,64 @@
     width: 280px;
     height: 50vh;
   }
+}
+
+.ProfileCard__image {
+  background-image: url(../utils/profile-background.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border-radius: 5px;
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+}
+
+.ProfileCard__image::before {
+  content: '';
+  position: absolute;
+  left: -25%;
+  bottom: -63%;
+  width: 100%;
+  height: 70%;
+  background: #fff;
+  -webkit-transform: rotate(12deg);
+          transform: rotate(12deg);
+}
+
+.ProfileCard__image::after {
+  content: '';
+  position: absolute;
+  left: auto;
+  right: -25%;
+  bottom: -63%;
+  width: 100%;
+  height: 70%;
+  background: #fff;
+  -webkit-transform: rotate(-8deg);
+          transform: rotate(-8deg);
+}
+
+.ProfileCard__self-wrapper {
+  position: relative;
+  margin-top: -25%;
+}
+
+.ProfileCard__self-image {
+  border: 3px solid #fff;
+  border-radius: 100%;
+}
+
+.ProfileCard__title {
+  font-size: 32px;
+  font-weight: 600;
+  padding: 10px 0;
+}
+
+.ProfileCard__subtitle {
+  color: #78CC6D;
 }
 /*# sourceMappingURL=ProfileCard.css.map */

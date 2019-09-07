@@ -119,6 +119,11 @@ body {
 		justify-content: center;
 		margin: 14vh auto 16vh;
 		width: 1400px;
+		@media (max-height: 800px ) {
+			margin: 4vh auto 6vh;
+			// background-color: rgb(102, 67, 67);
+			// width: 1000px;
+        }
 	}
 }
 
