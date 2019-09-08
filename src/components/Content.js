@@ -45,4 +45,6 @@ function Content() {
     }
 }
 
+console.log(window.innerWidth);
+
 export default Content;

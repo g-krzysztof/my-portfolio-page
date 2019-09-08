@@ -446,6 +446,12 @@ body {
   }
 }
 
+@media (max-width: 1024px) {
+  .ProfileCard__content {
+    width: 380px;
+  }
+}
+
 @media (max-width: 768px) {
   .ProfileCard__content {
     width: 70vw;
@@ -476,6 +482,12 @@ body {
 @media (max-height: 800px) {
   .ProfileCard__content::before {
     height: 90vh;
+  }
+}
+
+@media (max-width: 1024px) {
+  .ProfileCard__content::before {
+    width: 380px;
   }
 }
 

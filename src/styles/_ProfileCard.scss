@@ -21,6 +21,9 @@
         @media #{$mh8} {
             height: 90vh;
         }
+        @media #{$mw1} {
+            width: 380px;
+        }
         @media #{$mw7} {
             width: 70vw;
             border-radius: 0px;
@@ -42,6 +45,9 @@
         transition: .5s;
         @media #{$mh8} {
             height: 90vh;
+        }
+        @media #{$mw1} {
+            width: 380px;
         }
         @media #{$mw7} {
             background: none;
