@@ -10,6 +10,28 @@ body {
 	background: linear-gradient(90deg, #50A3A2, #80CC7E);
 	background-size: 200% 200%;
 	animation: bannerbg ease 8s infinite;
+	@media(max-width: 768px){
+		overflow: scroll;
+	}
+	&__layout {
+		display: flex;
+		align-items: flex-start;
+		position: relative;
+		justify-content: center;
+		margin: 14vh auto 16vh;
+		width: 1400px;
+		@media (max-height: 800px ) {
+			margin: 4vh auto 6vh;
+		}	
+		@media(max-width: 768px){
+			flex-direction: column;
+			flex-wrap: wrap;
+			margin: 0;
+		}
+		@media(max-width: 480px){
+		}
+	}
+	
 	&__squares {
 		position: relative;
 		top: 0;
@@ -111,19 +133,6 @@ body {
 			opacity: 0.05;
 			animation-delay: 18s;
 		}
-	}
-	&__layout {
-		display: flex;
-		align-items: flex-start;
-		position: relative;
-		justify-content: center;
-		margin: 14vh auto 16vh;
-		width: 1400px;
-		@media (max-height: 800px ) {
-			margin: 4vh auto 6vh;
-			// background-color: rgb(102, 67, 67);
-			// width: 1000px;
-        }
 	}
 }
 

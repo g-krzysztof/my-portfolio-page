@@ -1,13 +1,23 @@
 .Header {
     position: relative;
     background-color: #fff;
-    // width: 70px;
     border-radius: 5px;
     z-index: 10;
     margin: 50px 10px 0 0;
+    // display: flex;
+    @media(max-width: 768px) {
+        border-radius: 0;
+        margin: 0;
+    }
     &__nav {
         position: relative;
         list-style: none;
+        @media(max-width: 768px){
+            width: 100vw;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
     }
     &__item {
         position: relative;
@@ -16,6 +26,9 @@
         font-weight: 600;
         a {
             text-decoration: none;
+        }
+        @media(max-width: 768px){
+            flex-grow: 1;
         }
     }
 
