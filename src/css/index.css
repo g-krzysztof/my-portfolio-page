@@ -11,18 +11,73 @@ body {
   background: -webkit-gradient(linear, left top, right top, from(#50A3A2), to(#80CC7E));
   background: linear-gradient(90deg, #50A3A2, #80CC7E);
   background-size: 200% 200%;
-  -webkit-animation: bannerbg ease 8s infinite;
-          animation: bannerbg ease 8s infinite;
+}
+
+@media (min-width: 769px) {
+  .App {
+    -webkit-animation: bannerbg ease 8s infinite;
+            animation: bannerbg ease 8s infinite;
+  }
+}
+
+@media (max-width: 768px) {
+  .App {
+    overflow-y: auto;
+  }
+}
+
+.App__layout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 14vh 10vw 16vh 10vw;
+}
+
+@media (max-width: 1440px) {
+  .App__layout {
+    margin: 14vh 2vw 16vh 2vw;
+  }
+}
+
+@media (max-height: 800px) {
+  .App__layout {
+    margin-top: 4vh;
+    margin-bottom: 4h;
+  }
+}
+
+@media (max-width: 768px) {
+  .App__layout {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0;
+  }
 }
 
 .App__squares {
   position: relative;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 0%;
+  height: 0%;
   z-index: 1;
   color: #fff;
+}
+
+@media (min-width: 769px) {
+  .App__squares {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .App__squares li {
@@ -31,9 +86,20 @@ body {
   display: block;
   opacity: 0.2;
   font-size: 4rem;
-  -webkit-animation: square linear 24s infinite;
-          animation: square linear 24s infinite;
   bottom: -400px;
+}
+
+@media (min-width: 769px) {
+  .App__squares li {
+    -webkit-animation: square linear 24s infinite;
+            animation: square linear 24s infinite;
+  }
+}
+
+@media (max-width: 768px) {
+  .App__squares li {
+    font-size: 0rem !important;
+  }
 }
 
 .App__squares li:nth-child(1) {
@@ -132,27 +198,6 @@ body {
           animation-delay: 18s;
 }
 
-.App__layout {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  position: relative;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 14vh auto 16vh;
-  width: 1400px;
-}
-
-@media (max-height: 800px) {
-  .App__layout {
-    margin: 4vh auto 6vh;
-  }
-}
-
 @-webkit-keyframes bannerbg {
   0% {
     background-position: 0% 50%;
@@ -206,7 +251,7 @@ body {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  max-height: 60vh;
+  height: auto;
   min-height: 60vh;
   background-color: white;
   border-radius: 0px 5px 5px 0px;
@@ -218,10 +263,20 @@ body {
   transition: 0.5s;
 }
 
-@media (max-height: 800px) {
+@media (max-width: 768px) {
   .Content {
-    max-height: 80vh;
-    min-height: 80vh;
+    margin: 10px 15vw 0 15vw;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border-radius: 0px;
+    width: 70vw;
+  }
+}
+
+@media (max-width: 520px) {
+  .Content {
+    margin: 10px 0 0 0;
+    width: 100vw;
   }
 }
 
@@ -240,6 +295,13 @@ body {
   border-bottom: 1px solid #ccc;
 }
 
+.Content p {
+  font-size: 14px;
+  line-height: 1.5;
+  padding: 10px 0;
+  font-weight: 400;
+}
+
 .Header {
   position: relative;
   background-color: #fff;
@@ -248,9 +310,39 @@ body {
   margin: 50px 10px 0 0;
 }
 
+@media (max-width: 768px) {
+  .Header {
+    border-radius: 0;
+    margin: 0;
+  }
+}
+
 .Header__nav {
   position: relative;
   list-style: none;
+}
+
+@media (max-width: 768px) {
+  .Header__nav {
+    padding: 0 5vw;
+    width: 70vw;
+    margin: 0 15vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: fixed;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 10px 15px -10px rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 10px 15px -10px rgba(0, 0, 0, 0.5);
+  }
+}
+
+@media (max-width: 520px) {
+  .Header__nav {
+    padding: 0 0 0 0;
+    width: 100vw;
+    margin: 0 0 0 0;
+  }
 }
 
 .Header__item {
@@ -264,6 +356,14 @@ body {
   text-decoration: none;
 }
 
+@media (max-width: 768px) {
+  .Header__item {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+}
+
 .Header__item::before {
   content: '';
   position: absolute;
@@ -274,8 +374,21 @@ body {
   background: radial-gradient(ellipse at right, #ddd 0%, rgba(255, 255, 255, 0) 70%);
 }
 
+@media (max-width: 768px) {
+  .Header__item::before {
+    background: #fff;
+  }
+}
+
 .Header__item:nth-child(4)::before {
   height: 0px;
+}
+
+@media (max-width: 768px) {
+  .Header__item:nth-child(4)::before {
+    background: #fff;
+    height: 1px;
+  }
 }
 
 .Header__link {
@@ -303,6 +416,18 @@ body {
   z-index: 5;
 }
 
+@media (max-width: 768px) {
+  .ProfileCard {
+    margin: 0 15vw;
+  }
+}
+
+@media (max-width: 520px) {
+  .ProfileCard {
+    margin: 0 0 0 0;
+  }
+}
+
 .ProfileCard__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -328,6 +453,25 @@ body {
   }
 }
 
+@media (max-width: 1440px) {
+  .ProfileCard__content {
+    width: 380px;
+  }
+}
+
+@media (max-width: 768px) {
+  .ProfileCard__content {
+    width: 70vw;
+    border-radius: 0px;
+  }
+}
+
+@media (max-width: 520px) {
+  .ProfileCard__content {
+    width: 100vw;
+  }
+}
+
 .ProfileCard__content::before {
   content: '';
   position: absolute;
@@ -348,6 +492,18 @@ body {
   }
 }
 
+@media (max-width: 1440px) {
+  .ProfileCard__content::before {
+    width: 380px;
+  }
+}
+
+@media (max-width: 768px) {
+  .ProfileCard__content::before {
+    background: none;
+  }
+}
+
 .ProfileCard__image {
   background-image: url(../utils/profile-background.jpg);
   background-repeat: no-repeat;
@@ -360,6 +516,18 @@ body {
   width: 100%;
   height: 50%;
   overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .ProfileCard__image {
+    border-radius: 0px;
+  }
+}
+
+@media (max-height: 500px) {
+  .ProfileCard__image {
+    height: 40%;
+  }
 }
 
 .ProfileCard__image::before {
@@ -477,6 +645,12 @@ body {
   transition: .2s;
 }
 
+@media (max-width: 768px) {
+  .ProfileCard__bottom-btn {
+    border-radius: 0px;
+  }
+}
+
 .ProfileCard__bottom-btn:hover {
   color: #78CC6D;
 }
@@ -500,7 +674,6 @@ body {
 
 body {
   font-family: 'Raleway', sans-serif;
-  overflow: hidden;
 }
 
 .fade-enter {
