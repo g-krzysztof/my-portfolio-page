@@ -9,7 +9,10 @@ body {
 	position: relative;
 	background: linear-gradient(90deg, #50A3A2, #80CC7E);
 	background-size: 200% 200%;
-	animation: bannerbg ease 8s infinite;
+	@media(min-width: 769px) {
+		animation: bannerbg ease 8s infinite;
+	}
+	
 	@media(max-width: 768px){
 		overflow: scroll;
 	}
@@ -46,7 +49,9 @@ body {
 			display: block;
 			opacity: 0.2;
 			font-size: 4rem;
-			animation: square linear 24s infinite;
+			@media(min-width: 769px) {
+				animation: square linear 24s infinite;
+			}
 			bottom: -400px;
 		}
 		

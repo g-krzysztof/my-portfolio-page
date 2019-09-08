@@ -11,8 +11,13 @@ body {
   background: -webkit-gradient(linear, left top, right top, from(#50A3A2), to(#80CC7E));
   background: linear-gradient(90deg, #50A3A2, #80CC7E);
   background-size: 200% 200%;
-  -webkit-animation: bannerbg ease 8s infinite;
-          animation: bannerbg ease 8s infinite;
+}
+
+@media (min-width: 769px) {
+  .App {
+    -webkit-animation: bannerbg ease 8s infinite;
+            animation: bannerbg ease 8s infinite;
+  }
 }
 
 @media (max-width: 768px) {
@@ -70,9 +75,14 @@ body {
   display: block;
   opacity: 0.2;
   font-size: 4rem;
-  -webkit-animation: square linear 24s infinite;
-          animation: square linear 24s infinite;
   bottom: -400px;
+}
+
+@media (min-width: 769px) {
+  .App__squares li {
+    -webkit-animation: square linear 24s infinite;
+            animation: square linear 24s infinite;
+  }
 }
 
 .App__squares li:nth-child(1) {
