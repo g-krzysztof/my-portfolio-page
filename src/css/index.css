@@ -240,6 +240,13 @@ body {
   border-bottom: 1px solid #ccc;
 }
 
+.Content p {
+  font-size: 14px;
+  line-height: 1.5;
+  padding: 10px 0;
+  font-weight: 400;
+}
+
 .Header {
   position: relative;
   background-color: #fff;
