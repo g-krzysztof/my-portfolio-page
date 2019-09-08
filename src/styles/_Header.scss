@@ -12,10 +12,14 @@
         position: relative;
         list-style: none;
         @media #{$mw7}{
+            padding: 0 15vw;
             width: 100vw;
             display: flex;
             flex-direction: row;
             flex-wrap: nowrap;
+        }
+        @media #{$mw4} {
+            padding: 0 0 0 0;
         }
     }
     &__item {

@@ -42,4 +42,6 @@ const App = ({ location }) => {
   );
 }
 
+console.log(window.screen.width);
+
 export default withRouter(App);

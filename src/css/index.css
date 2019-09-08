@@ -22,7 +22,7 @@ body {
 
 @media (max-width: 768px) {
   .App {
-    overflow: scroll;
+    overflow-y: auto;
   }
 }
 
@@ -37,13 +37,12 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 14vh auto 16vh;
-  width: 1400px;
+  margin: 14vh 10vw 16vh;
 }
 
 @media (max-height: 800px) {
   .App__layout {
-    margin: 4vh auto 6vh;
+    margin: 4vh 2vw 6vh;
   }
 }
 
@@ -55,6 +54,11 @@ body {
             flex-direction: column;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
     margin: 0;
   }
 }
@@ -63,10 +67,17 @@ body {
   position: relative;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 0%;
+  height: 0%;
   z-index: 1;
   color: #fff;
+}
+
+@media (min-width: 769px) {
+  .App__squares {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .App__squares li {
@@ -82,6 +93,12 @@ body {
   .App__squares li {
     -webkit-animation: square linear 24s infinite;
             animation: square linear 24s infinite;
+  }
+}
+
+@media (max-width: 768px) {
+  .App__squares li {
+    font-size: 0rem !important;
   }
 }
 
@@ -234,23 +251,13 @@ body {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  max-height: 60vh;
-  min-height: 60vh;
   background-color: white;
   border-radius: 0px 5px 5px 0px;
-  margin: 5vh 0 0 0;
   padding: 10px 10px 20px 20px;
   -webkit-box-shadow: inset 20px 0 20px -20px rgba(0, 0, 0, 0.1);
           box-shadow: inset 20px 0 20px -20px rgba(0, 0, 0, 0.1);
   -webkit-transition: 0.5s;
   transition: 0.5s;
-}
-
-@media (max-height: 800px) {
-  .Content {
-    max-height: 80vh;
-    min-height: 80vh;
-  }
 }
 
 .Content__wrapper {
@@ -297,6 +304,7 @@ body {
 
 @media (max-width: 768px) {
   .Header__nav {
+    padding: 0 15vw;
     width: 100vw;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -307,6 +315,12 @@ body {
             flex-direction: row;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
+  }
+}
+
+@media (max-width: 520px) {
+  .Header__nav {
+    padding: 0 0 0 0;
   }
 }
 
@@ -381,6 +395,18 @@ body {
   z-index: 5;
 }
 
+@media (max-width: 768px) {
+  .ProfileCard {
+    margin: 0 15vw;
+  }
+}
+
+@media (max-width: 520px) {
+  .ProfileCard {
+    margin: 0 0 0 0;
+  }
+}
+
 .ProfileCard__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -406,6 +432,19 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+  .ProfileCard__content {
+    width: 70vw;
+    border-radius: 0px;
+  }
+}
+
+@media (max-width: 520px) {
+  .ProfileCard__content {
+    width: 100vw;
+  }
+}
+
 .ProfileCard__content::before {
   content: '';
   position: absolute;
@@ -426,6 +465,12 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+  .ProfileCard__content::before {
+    background: none;
+  }
+}
+
 .ProfileCard__image {
   background-image: url(../utils/profile-background.jpg);
   background-repeat: no-repeat;
@@ -438,6 +483,12 @@ body {
   width: 100%;
   height: 50%;
   overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .ProfileCard__image {
+    border-radius: 0px;
+  }
 }
 
 .ProfileCard__image::before {
@@ -553,6 +604,12 @@ body {
   outline: none;
   -webkit-transition: .2s;
   transition: .2s;
+}
+
+@media (max-width: 768px) {
+  .ProfileCard__bottom-btn {
+    border-radius: 0px;
+  }
 }
 
 .ProfileCard__bottom-btn:hover {
