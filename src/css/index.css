@@ -339,8 +339,21 @@ body {
   background: radial-gradient(ellipse at right, #ddd 0%, rgba(255, 255, 255, 0) 70%);
 }
 
+@media (max-width: 768px) {
+  .Header__item::before {
+    background: #fff;
+  }
+}
+
 .Header__item:nth-child(4)::before {
   height: 0px;
+}
+
+@media (max-width: 768px) {
+  .Header__item:nth-child(4)::before {
+    background: #fff;
+    height: 1px;
+  }
 }
 
 .Header__link {
