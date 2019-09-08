@@ -5,7 +5,6 @@ import App from './components/App';
 import { BrowserRouter as Router } from 'react-router-dom';
 import * as serviceWorker from './serviceWorker';
 
-
 const Website = () => (
     <Router>
         <div>
