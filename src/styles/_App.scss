@@ -21,15 +21,19 @@ body {
 		align-items: flex-start;
 		position: relative;
 		justify-content: center;
-		margin: 14vh 10vw 16vh;
+		margin: 14vh 10vw 16vh 10vw;
+		
+		@media #{$mw14} {
+			margin: 14vh 2vw 16vh 2vw;
+		}
+
 		@media #{$mh8} {
-			margin: 4vh 2vw 6vh;
-		}	
-		@media #{$mw7}{
+			margin-top: 4vh;
+			margin-bottom: 4h;
+		}
+
+		@media #{$mw7} {
 			flex-direction: column;
-			// flex-wrap: wrap;
-			// justify-content: stretch;
-			// align-content: stretch;
 			margin: 0;
 		}
 	}

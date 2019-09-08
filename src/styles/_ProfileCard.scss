@@ -19,9 +19,9 @@
         border-radius: 5px;
         transition: .5s;
         @media #{$mh8} {
-            height: 90vh;
-        }
-        @media #{$mw1} {
+			height: 90vh;
+		}
+        @media #{$mw14} {
             width: 380px;
         }
         @media #{$mw7} {
@@ -44,9 +44,9 @@
         border-radius: 5px;
         transition: .5s;
         @media #{$mh8} {
-            height: 90vh;
-        }
-        @media #{$mw1} {
+			height: 90vh;
+		}
+        @media #{$mw14} {
             width: 380px;
         }
         @media #{$mw7} {
@@ -67,6 +67,9 @@
         overflow: hidden;
         @media #{$mw7} {
             border-radius: 0px;
+        }
+        @media #{$mh5} {
+            height: 40%;
         }
     }
     &__image::before {

@@ -37,12 +37,19 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 14vh 10vw 16vh;
+  margin: 14vh 10vw 16vh 10vw;
+}
+
+@media (max-width: 1440px) {
+  .App__layout {
+    margin: 14vh 2vw 16vh 2vw;
+  }
 }
 
 @media (max-height: 800px) {
   .App__layout {
-    margin: 4vh 2vw 6vh;
+    margin-top: 4vh;
+    margin-bottom: 4h;
   }
 }
 
@@ -446,7 +453,7 @@ body {
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1440px) {
   .ProfileCard__content {
     width: 380px;
   }
@@ -485,7 +492,7 @@ body {
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1440px) {
   .ProfileCard__content::before {
     width: 380px;
   }
@@ -514,6 +521,12 @@ body {
 @media (max-width: 768px) {
   .ProfileCard__image {
     border-radius: 0px;
+  }
+}
+
+@media (max-height: 500px) {
+  .ProfileCard__image {
+    height: 40%;
   }
 }
 
