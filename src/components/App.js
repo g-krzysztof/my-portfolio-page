@@ -24,24 +24,22 @@ const App = ({ location }) => {
         </CSSTransition>
       </TransitionGroup>
 
-      <ul class="App__squares">
-        <li class="fa fa-stop" aria-hidden="true"></li>
-        <li class="fa fa-stop" aria-hidden="true"></li>
-        <li class="fa fa-stop" aria-hidden="true"></li>
-        <li class="fa fa-stop" aria-hidden="true"></li>
-        <li class="fa fa-stop" aria-hidden="true"></li>
-        <li class="fa fa-stop" aria-hidden="true"></li>
-        <li class="fa fa-stop" aria-hidden="true"></li>
-        <li class="fa fa-stop" aria-hidden="true"></li>
-        <li class="fa fa-stop" aria-hidden="true"></li>
-        <li class="fa fa-stop" aria-hidden="true"></li>
-        <li class="fa fa-stop" aria-hidden="true"></li>
-        <li class="fa fa-stop" aria-hidden="true"></li>
+      <ul className="App__squares">
+        <li className="fa fa-stop" aria-hidden="true"></li>
+        <li className="fa fa-stop" aria-hidden="true"></li>
+        <li className="fa fa-stop" aria-hidden="true"></li>
+        <li className="fa fa-stop" aria-hidden="true"></li>
+        <li className="fa fa-stop" aria-hidden="true"></li>
+        <li className="fa fa-stop" aria-hidden="true"></li>
+        <li className="fa fa-stop" aria-hidden="true"></li>
+        <li className="fa fa-stop" aria-hidden="true"></li>
+        <li className="fa fa-stop" aria-hidden="true"></li>
+        <li className="fa fa-stop" aria-hidden="true"></li>
+        <li className="fa fa-stop" aria-hidden="true"></li>
+        <li className="fa fa-stop" aria-hidden="true"></li>
       </ul>
     </div>
   );
 }
-
-console.log(window.screen.width);
 
 export default withRouter(App);
