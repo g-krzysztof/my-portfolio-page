@@ -23,7 +23,9 @@ function Works() {
                         <a href="https://github.com/g-krzysztof/memory-game" target="_blank" rel="noopener noreferrer">
                             <span className="Content__strong-span">https://github.com/g-krzysztof/memory-game</span></a></p>
                 </div>
-                <img className="Content__project-image" src={memory} alt="memory-game" />
+                <a className="Content__project-image" href="https://g-krzysztof.github.io/memory-game/" target="_blank" rel="noopener noreferrer">
+                    <img src={memory} alt="memory-game" />
+                </a>
             </div>
             <div className="Content__project">
                 <div className="Content__project-description" >
@@ -36,7 +38,9 @@ function Works() {
                         <a href="https://github.com/g-krzysztof/todoapp" target="_blank" rel="noopener noreferrer">
                             <span className="Content__strong-span">https://github.com/g-krzysztof/todoapp</span></a></p>
                 </div>
-                <img className="Content__project-image" src={todoapp} alt="todoapp" />
+                <a className="Content__project-image" href="https://krzysztofg.pl/todoapp/" target="_blank" rel="noopener noreferrer">
+                    <img src={todoapp} alt="todoapp" />
+                </a>
             </div>
         </div>
         // </Scrollbars>

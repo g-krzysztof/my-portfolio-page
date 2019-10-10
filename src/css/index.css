@@ -318,6 +318,7 @@ body {
 .Content__project-image {
   -ms-flex-item-align: end;
       align-self: flex-end;
+  margin: 0 5px 0 0;
   min-width: 200px;
   max-width: 383px;
   width: 45%;
