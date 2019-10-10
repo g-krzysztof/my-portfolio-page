@@ -112,6 +112,7 @@
         border-radius: 100%;
         position: relative;
         overflow: visible;
+        width: 140px;
     }
     &__title {
         font-size: 32px;
@@ -169,6 +170,14 @@
         transition: .2s;
         @media #{$mw7} {
             border-radius: 0px;
+        }
+        a {
+            color: $gray;
+            text-decoration: none;
+            transition: .2s;
+        }
+        a:hover {
+            color: $main-color;
         }
     }
     &__bottom-btn:hover {

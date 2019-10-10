@@ -280,12 +280,75 @@ body {
   }
 }
 
+.Content a {
+  color: #78CC6D;
+  font-weight: normal;
+}
+
+.Content p {
+  font-size: 18px;
+  line-height: 1.5;
+  padding: 10px 0;
+  font-weight: 400;
+}
+
+.Content__project {
+  border-radius: 4px;
+  background: linear-gradient(135deg, rgba(240, 238, 238, 0.685) 0%, rgba(120, 204, 109, 0.05) 100%);
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 0 15px 0;
+}
+
+.Content__project-description {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  font-size: 20px;
+}
+
+.Content__project-description p {
+  font-size: 16px;
+}
+
+.Content__project-image {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  min-width: 200px;
+  max-width: 383px;
+  width: 45%;
+}
+
+.Content__strong-span {
+  font-weight: 600;
+}
+
 .Content__wrapper {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
   overflow-y: hidden;
   overflow-x: hidden;
+  padding-left: 10px;
+}
+
+.Content__border-gradient {
+  height: 4px;
+  background: linear-gradient(135deg, rgba(120, 204, 109, 0.4) 0%, rgba(120, 204, 109, 0.01) 100%);
+}
+
+.Content__spacer {
+  height: 15px;
+}
+
+.Content__job-title {
+  color: #78CC6D;
+  font-size: 16px;
+  line-height: 2.2;
 }
 
 .Content h2 {
@@ -293,13 +356,31 @@ body {
   font-size: 32px;
   line-height: 1.7;
   border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
 }
 
-.Content p {
-  font-size: 14px;
+.Content h3 {
+  font-weight: 600;
+  font-size: 20px;
+  padding: 20px 0 4px 0;
+  text-transform: uppercase;
+}
+
+.Content h4 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.2;
+  padding: 10px 0 8px 0;
+  margin-bottom: 0px;
+}
+
+.Content__list {
+  list-style: square inside;
+}
+
+.Content li {
   line-height: 1.5;
-  padding: 10px 0;
-  font-weight: 400;
 }
 
 .Header {
@@ -356,6 +437,10 @@ body {
   text-decoration: none;
 }
 
+.Header__item a.active {
+  color: #78CC6D;
+}
+
 @media (max-width: 768px) {
   .Header__item {
     -webkit-box-flex: 1;
@@ -402,6 +487,10 @@ body {
 
 .Header__link:hover {
   color: #78CC6D;
+}
+
+.Header__link.active {
+  color: #876543;
 }
 
 .Header__icon {
@@ -576,6 +665,7 @@ body {
   border-radius: 100%;
   position: relative;
   overflow: visible;
+  width: 140px;
 }
 
 .ProfileCard__title {
@@ -649,6 +739,17 @@ body {
   .ProfileCard__bottom-btn {
     border-radius: 0px;
   }
+}
+
+.ProfileCard__bottom-btn a {
+  color: #333333;
+  text-decoration: none;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.ProfileCard__bottom-btn a:hover {
+  color: #78CC6D;
 }
 
 .ProfileCard__bottom-btn:hover {

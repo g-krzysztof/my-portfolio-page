@@ -33,7 +33,10 @@
         font-weight: 600;
         a {
             text-decoration: none;
-        }
+        }  
+        a.active{
+            color: $main-color;
+        }     
         @media #{$mw7}{
             flex-grow: 1;
         }
@@ -68,6 +71,9 @@
     }
     &__link:hover {
         color: $main-color;
+    }
+    &__link.active {
+        color: #876543;
     }
     &__icon {
         padding-bottom: 10px;

@@ -1,4 +1,6 @@
 import React from 'react';
+import memory from '../utils/memory.jpg';
+import todoapp from '../utils/todoapp.jpg';
 
 // import { Scrollbars } from 'react-custom-scrollbars';
 
@@ -6,27 +8,36 @@ function Works() {
     return (
         // <Scrollbars autoHeight>
         <div className="Content__about">
-            <h2>Works</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius sint aperiam, odit eos ad saepe sed impedit fugit. Hic, officiis vero. Dolores consectetur molestias itaque ducimus amet aliquam voluptate et!</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius sint aperiam, odit eos ad saepe sed impedit fugit. Hic, officiis vero. Dolores consectetur molestias itaque ducimus amet aliquam voluptate et!</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius sint aperiam, odit eos ad saepe sed impedit fugit. Hic, officiis vero. Dolores consectetur molestias itaque ducimus amet aliquam voluptate et!</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius sint aperiam, odit eos ad saepe sed impedit fugit. Hic, officiis vero. Dolores consectetur molestias itaque ducimus amet aliquam voluptate et!</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius sint aperiam, odit eos ad saepe sed impedit fugit. Hic, officiis vero. Dolores consectetur molestias itaque ducimus amet aliquam voluptate et!</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius sint aperiam, odit eos ad saepe sed impedit fugit. Hic, officiis vero. Dolores consectetur molestias itaque ducimus amet aliquam voluptate et!</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius sint aperiam, odit eos ad saepe sed impedit fugit. Hic, officiis vero. Dolores consectetur molestias itaque ducimus amet aliquam voluptate et!</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius sint aperiam, odit eos ad saepe sed impedit fugit. Hic, officiis vero. Dolores consectetur molestias itaque ducimus amet aliquam voluptate et!</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius sint aperiam, odit eos ad saepe sed impedit fugit. Hic, officiis vero. Dolores consectetur molestias itaque ducimus amet aliquam voluptate et!</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius sint aperiam, odit eos ad saepe sed impedit fugit. Hic, officiis vero. Dolores consectetur molestias itaque ducimus amet aliquam voluptate et!</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius sint aperiam, odit eos ad saepe sed impedit fugit. Hic, officiis vero. Dolores consectetur molestias itaque ducimus amet aliquam voluptate et!</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius sint aperiam, odit eos ad saepe sed impedit fugit. Hic, officiis vero. Dolores consectetur molestias itaque ducimus amet aliquam voluptate et!</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius sint aperiam, odit eos ad saepe sed impedit fugit. Hic, officiis vero. Dolores consectetur molestias itaque ducimus amet aliquam voluptate et!</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius sint aperiam, odit eos ad saepe sed impedit fugit. Hic, officiis vero. Dolores consectetur molestias itaque ducimus amet aliquam voluptate et!</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius sint aperiam, odit eos ad saepe sed impedit fugit. Hic, officiis vero. Dolores consectetur molestias itaque ducimus amet aliquam voluptate et!</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius sint aperiam, odit eos ad saepe sed impedit fugit. Hic, officiis vero. Dolores consectetur molestias itaque ducimus amet aliquam voluptate et!</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius sint aperiam, odit eos ad saepe sed impedit fugit. Hic, officiis vero. Dolores consectetur molestias itaque ducimus amet aliquam voluptate et!</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius sint aperiam, odit eos ad saepe sed impedit fugit. Hic, officiis vero. Dolores consectetur molestias itaque ducimus amet aliquam voluptate et!</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius sint aperiam, odit eos ad saepe sed impedit fugit. Hic, officiis vero. Dolores consectetur molestias itaque ducimus amet aliquam voluptate et!</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius sint aperiam, odit eos ad saepe sed impedit fugit. Hic, officiis vero. Dolores consectetur molestias itaque ducimus amet aliquam voluptate et!</p>
+            <h2>Projekty & programowanie</h2>
+            <div className="Content__project">
+                <div className="Content__project-description" >
+                    <span className="Content__strong-span">Gra Memory - napisana w React.js</span>
+                    <div className="Content__border-gradient"></div>
+                    <p>wersja na zapamiętanie dwóch elementów:<br />
+                        <a href="https://g-krzysztof.github.io/memory-game/" target="_blank" rel="noopener noreferrer">
+                            <span className="Content__strong-span">https://g-krzysztof.github.io/memory-game/</span></a></p>
+                    <p> wersja na zapamiętanie trzech elementów:<br />
+                        <a href="https://krzysztofg.pl/memory-triple-match/" target="_blank" rel="noopener noreferrer">
+                            <span className="Content__strong-span">https://krzysztofg.pl/memory-triple-match/</span></a></p>
+                    <p> link do repozytorium:<br />
+                        <a href="https://github.com/g-krzysztof/memory-game" target="_blank" rel="noopener noreferrer">
+                            <span className="Content__strong-span">https://github.com/g-krzysztof/memory-game</span></a></p>
+                </div>
+                <img className="Content__project-image" src={memory} alt="memory-game" />
+            </div>
+            <div className="Content__project">
+                <div className="Content__project-description" >
+                    <span className="Content__strong-span">Lista Zadań, ToDo App - React.js</span>
+                    <div className="Content__border-gradient"></div>
+                    <p>link do wersji online:<br />
+                        <a href="https://krzysztofg.pl/todoapp/" target="_blank" rel="noopener noreferrer">
+                            <span className="Content__strong-span">https://krzysztofg.pl/todoapp/</span></a></p>
+                    <p> link do repozytorium:<br />
+                        <a href="https://github.com/g-krzysztof/todoapp" target="_blank" rel="noopener noreferrer">
+                            <span className="Content__strong-span">https://github.com/g-krzysztof/todoapp</span></a></p>
+                </div>
+                <img className="Content__project-image" src={todoapp} alt="todoapp" />
+            </div>
         </div>
         // </Scrollbars>
     );

@@ -19,10 +19,58 @@
         margin: 10px 0 0 0;
         width: 100vw;
     }
+    a {
+        color: $main-color;
+        font-weight: normal;
+    }
+    p {
+        font-size: 18px;
+        line-height: 1.5;
+        padding: 10px 0;
+        font-weight: 400;
+    }
+    &__project {
+        border-radius: 4px;
+        // background-color: #eee;
+        background: linear-gradient(135deg,rgba(240, 238, 238, 0.685) 0%,rgba(120,204,109,.05) 100%);
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 0 15px 0;
+    }
+    &__project-description {
+        flex-grow: 1;
+        font-size: 20px;
+        p {
+            font-size: 16px;
+        }
+    }
+    &__project-image {
+        align-self: flex-end;
+        min-width: 200px;
+        max-width: 383px;
+        width: 45%;
+    }
+    &__strong-span {
+        font-weight: 600;
+    }
     &__wrapper {
         flex-grow: 1;
         overflow-y: hidden;
         overflow-x: hidden;
+        padding-left: 10px;
+    }
+    &__border-gradient {
+        height: 4px;
+        background: linear-gradient(135deg,rgba(120,204,109,.4) 0%,rgba(120,204,109,.01) 100%);
+    }
+    &__spacer {
+        height: 15px;
+    }
+    &__job-title {
+        color: #78CC6D;
+        font-size: 16px;
+        line-height: 2.2;
     }
 
     h2 {
@@ -30,11 +78,28 @@
         font-size: 32px;
         line-height: 1.7;
         border-bottom: 1px solid #ccc;
+        padding-bottom: 5px;
+        margin-bottom: 15px;
     }
-    p {
-        font-size: 14px;
+    h3 {
+        font-weight: 600;
+        font-size: 20px;
+        padding: 20px 0 4px 0;
+        // border-bottom: 8px solid $main-color;
+        text-transform: uppercase;
+    }
+    h4 {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 1.2;
+        // border-bottom: 1px solid #ccc;
+        padding: 10px 0 8px 0;
+        margin-bottom: 0px;
+    }
+    &__list {
+        list-style:square inside;
+    }
+    li {
         line-height: 1.5;
-        padding: 10px 0;
-        font-weight: 400;
     }
 }
