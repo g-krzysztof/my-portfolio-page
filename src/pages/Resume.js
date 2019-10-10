@@ -5,12 +5,11 @@ function Resume() {
     return (
         <div className="Content__about">
             <h2>Doświadczenie zawodowe</h2>
-            {/* <div className="Content__border-gradient"></div> */}
             <h4>od 2014<br />freelancer</h4>
             <ul className="Content__list">
-                <li>tworzenie stron internetowych: html, css, js</li>
-                <li>tworzenie stron www z wykorzystaniem systemów CMS: Joomla, Wordpress</li>
-                <li>projektowanie layoutów stron www oraz grafik na potrzeby internetu </li>
+                <li>tworzenie stron internetowych: html, css [scss], js [react.js]</li>
+                <li>tworzenie stron www z wykorzystaniem CMS: Joomla, Wordpress</li>
+                <li>projektowanie layoutów stron www oraz elementów graficznych</li>
                 <li>projektowanie grafik na potrzeby poligrafii oraz reklamy zewnętrznej</li>
             </ul>
             <div className="Content__spacer"></div>
