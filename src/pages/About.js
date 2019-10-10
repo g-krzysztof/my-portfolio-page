@@ -3,7 +3,7 @@ import React from 'react';
 function About() {
     return (
         <div className="Content__about">
-            <h2>Junior Front-end Developer</h2>
+            <h2>Front-end Developer</h2>
             <p>
                 Moim celem zawodowym jest praca <br /> na stanowisku Front-end Developera.
             </p>
